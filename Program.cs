@@ -12,6 +12,9 @@ namespace Making_Static_Methods
         {
             double perimeter = 3 + 4 + MyMethods.GetHypotenuse(3, 4);
             Console.WriteLine($"The perimeter is {perimeter}cm");
+            perimeter = 6 + MyMethods.GetLeg(6, 10) + 10;
+            Console.WriteLine($"The perimeter is {perimeter}cm");
+            
             Console.ReadLine();
             
         }
