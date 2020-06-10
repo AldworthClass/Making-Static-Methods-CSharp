@@ -49,9 +49,59 @@ namespace Making_Static_Methods
         ///<param name="p1"> A Point value representing the first point.</param>
         ///<param name="p2"> A Point value representing the second point.</param>
         ///<returns>A double value representing the rise (y2-y1) of two Points provided.</returns>
-        public static double GetRise(Point p1,Point p2 )
+        public static double GetRise(Point p1, Point p2)
         {
             return GetRise(p1.Y, p2.Y); //lets use the method we know works to calculate the slope.
         }
+
+
+
+        ///<summary>
+        ///This method returns the rrun (x2-x1) a of two x values provided.
+        ///</summary>
+        ///<param name="p1"> A Point value representing the first point.</param>
+        ///<param name="p2"> A Point value representing the second point.</param>
+        ///<returns>A double value representing the run (x2-x1) of two Points provided.</returns>
+        public static double GetRun(Point p1,Point p2 )
+        {
+            return GetRun(p1.X, p2.X); //lets use the method we know works to calculate the slope.
+        }
+
+        ///<summary>
+        ///This method returns the run (x2-x1) a of two y values provided.
+        ///</summary>
+        ///<param name="x1"> A double value representing the x-coordinate of the first point.</param>
+        ///<param name="x2"> A double value representing the x-coordinate of the second point.</param>
+        ///<returns>A double value representing the rise (x2-x1) of two y-values provided.</returns>
+        public static double GetRun(double x1, double x2)
+        {
+            return x2 - x1;
+        }
+
+
+        ///<summary>
+        ///This method returns the distance between 2 poins.
+        ///</summary>
+        ///<param name="x1"> A double value representing the x-coordinate of the first point.</param>
+        ///<param name="y1"> A double value representing the y-coordinate of the first point.</param>
+        ///<param name="x2"> A double value representing the x-coordinate of the second point.</param>
+        ///<param name="y2"> A double value representing the y-coordinate of the second point.</param>
+        ///<returns>A double value representing the distance between two points provided.</returns>
+        public static double GetDistance(double x1, double y1, double x2, double y2)
+        {
+            return GetHypotenuse(GetRun(x1, x2), GetRise(y1, y2));  //The rise and run are the two legs of a right triangle
+        }
+
+        ///<summary>
+        ///This method returns the distance between 2 poins.
+        ///</summary>
+        ///<param name="p1"> A Point representing the first coordinate.</param>
+        ///<param name="p2"> A Point representing the second coordinate.</param>
+        ///<returns>A double value representing the distance between two points provided.</returns>
+        public static double GetDistance(Point p1, Point p2)
+        {
+            return GetDistance(p1.X, p1.Y, p2.X, p2.Y);
+        }
+
     }
 }
