@@ -103,5 +103,16 @@ namespace Making_Static_Methods
             return GetDistance(p1.X, p1.Y, p2.X, p2.Y);
         }
 
+
+        public static double GetSlope(double x1, double y1, double x2, double y2)
+        {
+            return GetRise(y1, y2) / GetRun(x1, x2);
+        }
+
+        public static double GetSlope(Point p1, Point p2)
+        {
+            return GetSlope(p1.X, p1.Y, p2.X, p2.Y);
+        }
+
     }
 }
