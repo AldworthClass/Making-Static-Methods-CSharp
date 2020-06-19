@@ -44,7 +44,7 @@ namespace Making_Static_Methods
         }
 
         ///<summary>
-        ///This method returns the rise (y2-y1) a of two coordinates provided.
+        ///This method returns the rise (y2-y1) of two coordinates provided.
         ///</summary>
         ///<param name="p1"> A Point value representing the first coordinate.</param>
         ///<param name="p2"> A Point value representing the second coordinate.</param>
@@ -68,7 +68,7 @@ namespace Making_Static_Methods
         }
 
         ///<summary>
-        ///This method returns the run (x2-x1) a of two x values provided.
+        ///This method returns the run (x2-x1) of two x values provided.
         ///</summary>
         ///<param name="x1"> A double value representing the x-coordinate of the first coordinate.</param>
         ///<param name="x2"> A double value representing the x-coordinate of the second coordinate.</param>
